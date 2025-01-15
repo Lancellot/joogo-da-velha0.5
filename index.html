@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Jogos</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seleção de Jogos</h1>
+    </header>
+    <div class="container">
+        <h2>Escolha um Jogo</h2>
+        <button onclick="mostrarJogo('jogoDaVelha')">Jogo da Velha</button>
+        <button onclick="mostrarJogo('jogoMemoria')">Jogo da Memória</button>
+    </div>
+
+    <div id="jogoDaVelha" class="area-jogo">
+        <h2>Jogo da Velha</h2>
+        <div id="tabuleiroVelha"></div>
+        <button onclick="reiniciarJogoVelha()">Reiniciar Jogo</button>
+    </div>
+
+    <div id="jogoMemoria" class="area-jogo">
+        <h2>Jogo da Memória</h2>
+        <label for="pecas">Quantidade de Peças: </label>
+        <input type="number" id="pecas" min="4" max="20" step="2" value="4">
+        <button onclick="iniciarJogoMemoria()">Iniciar Jogo</button>
+        <div id="tabuleiroMemoria"></div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
